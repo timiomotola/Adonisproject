@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">TB</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto pl-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="leftLink"
+                aria-current="page"
+                href="#"
+                >Posts</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="leftLink" href="#">Add</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown" id="profileDropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                tims
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid addRow">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <div class="card mx-auto">
+            <div class="card-header">ADD FILES</div>
+            <div class="card-body">
+              <form>
+                <div class="row mb-3">
+                    <div class="col">
+                      <label for="contentWriter" class="left-label"
+                        >Name of content writer</label
+                      >
+                      <input
+                        type="text"
+                        class="inputs form-control"
+                        autocomplete="off"
+                      />
+                  </div>
+                  </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="articleTitle" class="left-label"
+                      >Title of the article</label
+                    >
+                    <input
+                      type="text"
+                      class="inputs form-control"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="articleSubtitle" class="left-label"
+                      >Subtitle of the article</label
+                    >
+                    <input
+                      type="text"
+                      class="inputs form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="inputDate" class="left-label">Date</label>
+                    <input
+                      type="date"
+                      class="inputs form-control"
+                      id="inputDate"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="contentWritten" class="left-label">Input article here</label>
+                        <textarea
+                          id="contentWritten"
+                          class="inputs form-control"
+                          required
+                          autocomplete="off"
+                        ></textarea>
+                      </div>
+                      
+                </div>
+
+                <div class="text-center col mb-1">
+                  <a href="example.html"
+                    ><button type="submit" class="submitButton">
+                      Submit
+                    </button></a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

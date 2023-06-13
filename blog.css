@@ -1,0 +1,15 @@
+#leftLink{
+    margin-left: 30px;
+}
+#leftLink:hover{
+    color: grey;
+}
+
+.cardContainer{
+    margin-top: 6rem;
+}
+
+/* add page */
+.addRow{
+    margin-top: 4rem;
+}
